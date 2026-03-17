@@ -18,7 +18,7 @@ def get_chunks(url, chunk_max=1000):
     response = requests.get(
         "https://web-reader-api.p.rapidapi.com/api/read",
         headers=HEADERS,
-        params={"url": url, "chunks": "true", "chunk_max": chunk_max},
+        params={"url": url, "chunks": "true", "chunk_max": chunk_max, "output": "json"},
     )
     response.raise_for_status()
     return response.json()

@@ -6,7 +6,7 @@
 const API_KEY = process.env.RAPIDAPI_KEY || "YOUR_RAPIDAPI_KEY";
 
 async function readUrl(url) {
-  const params = new URLSearchParams({ url });
+  const params = new URLSearchParams({ url, output: "json" });
   const response = await fetch(
     `https://web-reader-api.p.rapidapi.com/api/read?${params}`,
     {

@@ -24,7 +24,7 @@ def scrape_and_chunk(url):
     response = requests.get(
         "https://web-reader-api.p.rapidapi.com/api/read",
         headers=HEADERS,
-        params={"url": url, "chunks": "true", "ai_summary": "true"},
+        params={"url": url, "chunks": "true", "ai_summary": "true", "output": "json"},
     )
     response.raise_for_status()
     return response.json()

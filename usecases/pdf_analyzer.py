@@ -23,6 +23,7 @@ def analyze_pdf(url):
             "ai_summary": "true",
             "chunks": "true",
             "frontmatter": "false",
+            "output": "json",
         },
     )
     response.raise_for_status()

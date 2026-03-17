@@ -34,7 +34,7 @@ def check_page(url):
     response = requests.get(
         "https://web-reader-api.p.rapidapi.com/api/read",
         headers={**HEADERS, "Accept": "application/json"},
-        params={"url": url, "mode": "compact", "frontmatter": "false"},
+        params={"url": url, "mode": "compact", "frontmatter": "false", "output": "json"},
     )
     response.raise_for_status()
     data = response.json()

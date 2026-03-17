@@ -18,7 +18,7 @@ def summarize_url(url):
     response = requests.get(
         "https://web-reader-api.p.rapidapi.com/api/read",
         headers=HEADERS,
-        params={"url": url, "ai_summary": "true"},
+        params={"url": url, "ai_summary": "true", "output": "json"},
     )
     response.raise_for_status()
     return response.json()

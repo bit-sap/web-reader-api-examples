@@ -19,7 +19,7 @@ def read_url(url):
     response = requests.get(
         f"{BASE_URL}/api/read",
         headers=HEADERS,
-        params={"url": url},
+        params={"url": url, "output": "json"},
     )
     response.raise_for_status()
     return response.json()

@@ -19,10 +19,10 @@ if __name__ == "__main__":
     url = "https://en.wikipedia.org/wiki/Markdown"
 
     # Normal mode
-    normal = requests.get(BASE_URL, headers=HEADERS, params={"url": url, "frontmatter": "false"}).json()
+    normal = requests.get(BASE_URL, headers=HEADERS, params={"url": url, "frontmatter": "false", "output": "json"}).json()
 
     # Compact mode
-    compact = requests.get(BASE_URL, headers=HEADERS, params={"url": url, "mode": "compact", "frontmatter": "false"}).json()
+    compact = requests.get(BASE_URL, headers=HEADERS, params={"url": url, "mode": "compact", "frontmatter": "false", "output": "json"}).json()
 
     normal_len = len(normal["content"])
     compact_len = len(compact["content"])
