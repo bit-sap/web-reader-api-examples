@@ -9,14 +9,14 @@ import requests
 API_KEY = os.environ.get("RAPIDAPI_KEY", "YOUR_RAPIDAPI_KEY")
 HEADERS = {
     "X-RapidAPI-Key": API_KEY,
-    "X-RapidAPI-Host": "web-reader-api.p.rapidapi.com",
+    "X-RapidAPI-Host": "webreader-ai.p.rapidapi.com",
 }
 
 
 def summarize_url(url):
     """Fetch a URL with AI-generated summary."""
     response = requests.get(
-        "https://web-reader-api.p.rapidapi.com/api/read",
+        "https://webreader-ai.p.rapidapi.com/api/read",
         headers=HEADERS,
         params={"url": url, "ai_summary": "true", "output": "json"},
     )

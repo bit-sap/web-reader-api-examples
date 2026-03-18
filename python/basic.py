@@ -7,10 +7,10 @@ import os
 import requests
 
 API_KEY = os.environ.get("RAPIDAPI_KEY", "YOUR_RAPIDAPI_KEY")
-BASE_URL = "https://web-reader-api.p.rapidapi.com"
+BASE_URL = "https://webreader-ai.p.rapidapi.com"
 HEADERS = {
     "X-RapidAPI-Key": API_KEY,
-    "X-RapidAPI-Host": "web-reader-api.p.rapidapi.com",
+    "X-RapidAPI-Host": "webreader-ai.p.rapidapi.com",
 }
 
 

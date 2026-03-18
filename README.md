@@ -1,10 +1,10 @@
 # Web Reader API — Code Examples
 
-Ready-to-run code examples for [Web Reader API](https://rapidapi.com/bitsap/api/web-reader-api), an AI-powered web scraping API for LLMs and RAG pipelines.
+Ready-to-run code examples for [Web Reader API](https://rapidapi.com/bitsap/api/webreader-ai), an AI-powered web scraping API for LLMs and RAG pipelines.
 
 ## Get Your API Key
 
-1. Go to [RapidAPI](https://rapidapi.com/bitsap/api/web-reader-api)
+1. Go to [RapidAPI](https://rapidapi.com/bitsap/api/webreader-ai)
 2. Subscribe to a plan (Free tier: 100 requests/month)
 3. Copy your `X-RapidAPI-Key`
 
@@ -64,6 +64,6 @@ export RAPIDAPI_KEY="your-rapidapi-key-here"
 
 ## Links
 
-- **API on RapidAPI**: https://rapidapi.com/bitsap/api/web-reader-api
-- **Documentation**: https://rapidapi.com/bitsap/api/web-reader-api
+- **API on RapidAPI**: https://rapidapi.com/bitsap/api/webreader-ai
+- **Documentation**: https://rapidapi.com/bitsap/api/webreader-ai
 - **Zenn Article (Japanese)**: https://zenn.dev/bitsap/articles/1c9edcda57b336

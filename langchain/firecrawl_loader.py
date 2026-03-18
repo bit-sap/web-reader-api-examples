@@ -16,7 +16,7 @@ def load_with_firecrawl_loader(url):
     loader = FireCrawlLoader(
         url=url,
         api_key=API_KEY,
-        api_url="https://web-reader-api.p.rapidapi.com",
+        api_url="https://webreader-ai.p.rapidapi.com",
         mode="scrape",
     )
     return loader.load()

@@ -10,7 +10,7 @@ import requests
 API_KEY = os.environ.get("RAPIDAPI_KEY", "YOUR_RAPIDAPI_KEY")
 HEADERS = {
     "X-RapidAPI-Key": API_KEY,
-    "X-RapidAPI-Host": "web-reader-api.p.rapidapi.com",
+    "X-RapidAPI-Host": "webreader-ai.p.rapidapi.com",
 }
 
 HASH_FILE = "page_hashes.json"
@@ -32,7 +32,7 @@ def save_hashes(hashes):
 def check_page(url):
     """Fetch page and return content hash."""
     response = requests.get(
-        "https://web-reader-api.p.rapidapi.com/api/read",
+        "https://webreader-ai.p.rapidapi.com/api/read",
         headers={**HEADERS, "Accept": "application/json"},
         params={"url": url, "mode": "compact", "frontmatter": "false", "output": "json"},
     )

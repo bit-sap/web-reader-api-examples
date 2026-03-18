@@ -7,12 +7,12 @@ const API_KEY = process.env.RAPIDAPI_KEY || "YOUR_RAPIDAPI_KEY";
 
 async function batchRead(urls, options = {}) {
   const response = await fetch(
-    "https://web-reader-api.p.rapidapi.com/api/batch",
+    "https://webreader-ai.p.rapidapi.com/api/batch",
     {
       method: "POST",
       headers: {
         "X-RapidAPI-Key": API_KEY,
-        "X-RapidAPI-Host": "web-reader-api.p.rapidapi.com",
+        "X-RapidAPI-Host": "webreader-ai.p.rapidapi.com",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ urls, options }),

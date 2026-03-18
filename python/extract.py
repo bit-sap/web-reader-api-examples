@@ -10,7 +10,7 @@ import requests
 API_KEY = os.environ.get("RAPIDAPI_KEY", "YOUR_RAPIDAPI_KEY")
 HEADERS = {
     "X-RapidAPI-Key": API_KEY,
-    "X-RapidAPI-Host": "web-reader-api.p.rapidapi.com",
+    "X-RapidAPI-Host": "webreader-ai.p.rapidapi.com",
     "Content-Type": "application/json",
 }
 
@@ -18,7 +18,7 @@ HEADERS = {
 def extract(url, prompt, schema=None):
     """Extract structured data using AI."""
     response = requests.post(
-        "https://web-reader-api.p.rapidapi.com/v1/scrape",
+        "https://webreader-ai.p.rapidapi.com/v1/scrape",
         headers=HEADERS,
         json={
             "url": url,

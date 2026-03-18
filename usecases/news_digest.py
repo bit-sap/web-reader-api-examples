@@ -9,7 +9,7 @@ import requests
 API_KEY = os.environ.get("RAPIDAPI_KEY", "YOUR_RAPIDAPI_KEY")
 HEADERS = {
     "X-RapidAPI-Key": API_KEY,
-    "X-RapidAPI-Host": "web-reader-api.p.rapidapi.com",
+    "X-RapidAPI-Host": "webreader-ai.p.rapidapi.com",
     "Content-Type": "application/json",
 }
 
@@ -17,7 +17,7 @@ HEADERS = {
 def create_digest(urls):
     """Fetch and summarize multiple articles."""
     response = requests.post(
-        "https://web-reader-api.p.rapidapi.com/api/batch",
+        "https://webreader-ai.p.rapidapi.com/api/batch",
         headers=HEADERS,
         json={
             "urls": urls,
